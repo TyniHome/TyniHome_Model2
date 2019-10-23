@@ -20,7 +20,7 @@ public class ActionForward {
 		this.path = path;
 	}
 
-	public boolean isRedirect() { //getMethod와 동일
+	public boolean isRedirect() { 
 		return isRedirect;
 	}
 

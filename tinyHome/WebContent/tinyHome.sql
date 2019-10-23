@@ -2,7 +2,6 @@ CREATE SCHEMA `tinyhome` DEFAULT CHARACTER SET utf8 ;
 
 CREATE TABLE `tinyhome`.`th_member` (
   `mem_idx` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `mem_userid` VARCHAR(100) NOT NULL,
   `mem_email` VARCHAR(100) NOT NULL,
   `mem_password` CHAR(64) NOT NULL,
   `mem_status` ENUM('Y', 'N', 'D') NOT NULL DEFAULT 'Y',

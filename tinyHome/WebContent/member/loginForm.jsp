@@ -4,9 +4,60 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>TinyHome</title>
+<%//TODO 입력제어 %>
 </head>
 <body>
+<div class="box_round">
+	<!-- 헤더파일 -->
+	<jsp:include page="../include/top.jsp"/>
+	<!-- 헤더파일 -->
+<div class="scroll">
+<fieldset>
+<legend>로그인</legend>
+<form action="loginPro.jsp" method="post" name="loginFr" onsubmit="return valCk();">
+<table>
+	<tr><!-- pattern="[A-za-z0-9]{4,12}" -->
+		<td colspan="2">
+			<input type="text" class="inputbox" name="id" placeholder="아이디(이메일)"  autofocus autocomplete="off">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2">
+			<input type="password" name="pw" class="inputbox" placeholder="비밀번호">
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<input type="submit" value="로그인" class="btn" id="subbutton" >
+			<input type="reset" value="취소" class="btn" id="subbutton">
+		</td>
+	</tr>
+	
+	<tr>
+		<td style="text-align: center;">
+			<a href="#">아이디 찾기</a>
+		</td>
+		<td style="text-align: center;">
+			<a href="#">비밀번호 찾기</a>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan="2">
+			<input type="button" value="회원가입" class="btn" onclick="location.href='joinForm.jsp'">
+		</td>
+	</tr>
 
+</table>
+</form>
+</fieldset>
+
+	</div>
+	<!-- 푸터파일 -->
+	<jsp:include page="../include/bottom.jsp"/>
+	<!-- 푸터파일 -->
+</div>
 </body>
 </html>

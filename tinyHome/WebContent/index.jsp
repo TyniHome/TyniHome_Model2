@@ -4,12 +4,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>tinyHome</title>
+<title>TinyHome</title>
 </head>
 <body>
 <h1>WebContent/index.jsp</h1>
 
 <%
+	//response.sendRedirect("./Main.me");
 	response.sendRedirect("./MemberJoin.me");
 %>
 
