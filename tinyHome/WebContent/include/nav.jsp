@@ -70,12 +70,12 @@
 			<div class="collapsible-body">
 				<ul class="inline">
 				<li><a href="#">About</a></li>
-				<li><a href="#">Github</a></li>
-				<li><a href="#">PROFIL</a></li>
+				<li><a href="#">PROFILE</a></li>
 				<li><a href="#">DIARY</a></li>
-				<li><a href="#">WILL</a></li>
 				<li><a href="#">ALBUM</a></li>
+				<li><a href="#">WILL</a></li>
 				<li><a href="#">NOTICE</a></li>
+				<li><a href="#">Github</a></li>
 				</ul>
 			</div>
 		</div>

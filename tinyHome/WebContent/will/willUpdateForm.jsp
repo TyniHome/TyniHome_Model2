@@ -23,7 +23,7 @@ if(id!=null){
 		<!-- 헤더파일 -->
 		<div class="scroll">
 			<div class="flex-center align-top">
-				<h1 class="article-title flex-center align-top">WRITE</h1>
+				<h1 class="article-title flex-center align-top">EDIT</h1>
 				<form action="#" name="joinFr" id="joinFr" method="post" novalidate>
 					<div class="row form-group flex-center col-8 col align-top">
 						<input type="text" name="id" class="input-block"
@@ -31,11 +31,12 @@ if(id!=null){
 							data-validation-help="example@email.com" autocomplete="off"
 							data-validation-error-msg="You did not enter a valid e-mail"
 							required>
+&nbsp;&nbsp;<br>&nbsp;
 						<textarea class="input-block"
 							placeholder="내용을 입력하세요"></textarea>
-
+&nbsp;&nbsp;<br>&nbsp;
 						<input type="file" class="input-block">
-						
+&nbsp;&nbsp;<br>&nbsp;
 						
 						<input type="submit" class="paper-btn btn-block btn-primary"
 							id="subbutton" value="WRITE">

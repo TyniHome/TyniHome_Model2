@@ -24,26 +24,37 @@ if(id!=null){
 		<div class="scroll">
 			<div class="flex-center align-top">
 				<h1 class="article-title flex-center align-top">SIGN IN</h1>
-				<form action="#" name="joinFr" id="joinFr" method="post" novalidate>
+				<form action="#" name="Fr" id="Fr" method="post" novalidate>
 					<div class="row form-group flex-center col-8 col align-top">
 						<input type="text" name="id" class="input-block"
 							data-validation="email" placeholder="ID (example@email.com)"
 							data-validation-help="example@email.com" autocomplete="off"
 							data-validation-error-msg="You did not enter a valid e-mail"
 							required>
+																				
+&nbsp;
+					
 						<input type="password" class="input-block paperInputs2"
 							id="password" name="password" placeholder="Password"
 							data-validation="strength" data-validation-strength="2"
 							data-validation="required"
 							data-validation-error-msg="You did not enter a password"
 							required>
-
+													
+&nbsp;
+					
 						<input type="submit" class="paper-btn btn-block btn-primary"
 							id="subbutton" value="SIGN IN">
+																				
+&nbsp;&nbsp;<br>&nbsp;
+					
 						<input type="button" class="col-fill col paper-btn btn-default"
 								value="FORGOT ID">							
 						<input type="button"
 								class="col-fill col paper-btn btn-default" value="FORGOT PASS">
+																					
+&nbsp;&nbsp;<br>&nbsp;
+					
 						<input type="button" value="SIGN UP" class="paper-btn btn-block"
 								onclick="location.href='joinForm.jsp'">
 					</div>

@@ -24,7 +24,7 @@ if(id!=null){
 		<div class="scroll">
 			<div class="flex-center align-top">
 				<h1 class="article-title flex-center align-top">SIGN UP</h1>
-				<form action="#" name="joinFr" id="joinFr" method="post" novalidate>
+				<form action="#" name="Fr" id="Fr" method="post" novalidate>
 					<div class="row form-group flex-center col-8 col align-top">
 						<input type="text" name="id" class="input-block"
 							data-validation="email" placeholder="ID (example@email.com)"
@@ -34,7 +34,7 @@ if(id!=null){
 					<!-- 버튼없이 중복체크하게 <input type="button" class="paper-btn btn-default" name="mailCk" value="중복체크" onclick="mailCkOpen();">  -->
 						<input type="hidden" name="mailDupCk" value="N" />
 						
-					<div class="form-group"></div>
+&nbsp;
 
 						<input type="password" class="input-block paperInputs2"
 							id="password" name="password" placeholder="Password"
@@ -43,7 +43,7 @@ if(id!=null){
 							data-validation-error-msg="You did not enter a password"
 							required>
 
-					<div class="form-group"></div>
+&nbsp;
 
 						<input type="password" class="input-block paperInputs2"
 							id="password_again" name="password_again"
@@ -51,7 +51,7 @@ if(id!=null){
 							data-validation-error-msg="You did not enter a Password_again"
 							required>
 
-					<div class="form-group"></div>
+&nbsp;
 					
 						<input type="text" name="nick" id="=" nick" class="input-block"
 							placeholder="nickname" onkeydown="inputNickCk();"
@@ -60,17 +60,25 @@ if(id!=null){
 							required> <input type="hidden" name="nickDupCk"
 							value="N" />
 			
-					<div class="form-group"></div>
+&nbsp;
 			
 						<input type="submit" class="paper-btn btn-block btn-primary"
 							id="subbutton" value="SIGN UP">
 													
+&nbsp;
+													
 						<input type="reset" class="col-fill col paper-btn btn-default"
 							id="subbutton" value="RESET"
-							onclick="location.href='../Main.me'"> <input
-							type="button" class="col-fill col paper-btn btn-default"
+							onclick="location.href='../Main.me'"> 
+							
+						<input type="button" class="col-fill col paper-btn btn-default"
 							value="MAIN">
-						<input data-validation="recaptcha"
+
+&nbsp;&nbsp;<br>
+&nbsp;<br>
+
+&nbsp;
+						<input data-validation="recaptcha" class="input-block"
 							data-validation-recaptcha-sitekey="6Lf19a8UAAAAALCpN7vA8iaSJ9bQC2LiByrAeta5">	
 					</div>
 				</form>

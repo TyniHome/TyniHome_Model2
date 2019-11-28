@@ -31,9 +31,13 @@ if(id!=null){
 							data-validation-help="example@email.com" autocomplete="off"
 							data-validation-error-msg="You did not enter a valid e-mail"
 							required>
+&nbsp;&nbsp;<br>&nbsp;
 						<textarea class="input-block"
 							placeholder="내용을 입력하세요"></textarea>
-
+&nbsp;&nbsp;<br>&nbsp;
+						<input type="file" class="input-block">
+&nbsp;&nbsp;<br>&nbsp;
+						
 						<input type="submit" class="paper-btn btn-block btn-primary"
 							id="subbutton" value="WRITE">
 						<input type="reset" class="col-fill col paper-btn btn-default"
