@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>TinyHome</title>
-<%
+<%--
 /**메일자르기**/
 String mail = mdto
 int atIdx = mail.indexOf("@"); //먼저 @의 인덱스를 찾는다
@@ -19,9 +19,16 @@ String phone2 = mdto.getMember_phone().substring(3,7);
 String phone3 = mdto.getMember_phone().substring(7,11);
 /**연락처자르기**/
 
-%>
+--%>
 </head>
 <body>
+
+<table>
+
+
+</table>
+
+
 
 </body>
 </html>

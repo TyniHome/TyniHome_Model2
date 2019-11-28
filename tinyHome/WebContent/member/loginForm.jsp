@@ -1,63 +1,59 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>TinyHome</title>
-<%//TODO 입력제어 %>
+<jsp:include page="../include/top.jsp" />
 </head>
 <body>
-<div class="box_round">
-	<!-- 헤더파일 -->
-	<jsp:include page="../include/top.jsp"/>
-	<!-- 헤더파일 -->
-<div class="scroll">
-<fieldset>
-<legend>로그인</legend>
-<form action="loginPro.jsp" method="post" name="loginFr" onsubmit="return valCk();">
-<table>
-	<tr><!-- pattern="[A-za-z0-9]{4,12}" -->
-		<td colspan="2">
-			<input type="text" class="inputbox" name="id" placeholder="아이디(이메일)"  autofocus autocomplete="off">
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">
-			<input type="password" name="pw" class="inputbox" placeholder="비밀번호">
-		</td>
-	</tr>
-	
-	<tr>
-		<td colspan="2">
-			<input type="submit" value="로그인" class="btn" id="subbutton" >
-			<input type="reset" value="취소" class="btn" id="subbutton">
-		</td>
-	</tr>
-	
-	<tr>
-		<td style="text-align: center;">
-			<a href="#">아이디 찾기</a>
-		</td>
-		<td style="text-align: center;">
-			<a href="#">비밀번호 찾기</a>
-		</td>
-	</tr>
-	
-	<tr>
-		<td colspan="2">
-			<input type="button" value="회원가입" class="btn" onclick="location.href='joinForm.jsp'">
-		</td>
-	</tr>
 
-</table>
-</form>
-</fieldset>
+	<%--
+String id = (String)session.getAttribute("id");
+if(id!=null){
+	response.sendRedirect("../main/main.jsp");
+}
+--%>
+	<div class="box_round">
+		<!-- 헤더파일 -->
+		<jsp:include page="../include/nav.jsp" />
+		<!-- 헤더파일 -->
+		<div class="scroll">
+			<div class="flex-center align-top">
+				<h1 class="article-title flex-center align-top">SIGN IN</h1>
+				<form action="#" name="joinFr" id="joinFr" method="post" novalidate>
+					<div class="row form-group flex-center col-8 col align-top">
+						<input type="text" name="id" class="input-block"
+							data-validation="email" placeholder="ID (example@email.com)"
+							data-validation-help="example@email.com" autocomplete="off"
+							data-validation-error-msg="You did not enter a valid e-mail"
+							required>
+						<input type="password" class="input-block paperInputs2"
+							id="password" name="password" placeholder="Password"
+							data-validation="strength" data-validation-strength="2"
+							data-validation="required"
+							data-validation-error-msg="You did not enter a password"
+							required>
 
+						<input type="submit" class="paper-btn btn-block btn-primary"
+							id="subbutton" value="SIGN IN">
+						<input type="button" class="col-fill col paper-btn btn-default"
+								value="FORGOT ID">							
+						<input type="button"
+								class="col-fill col paper-btn btn-default" value="FORGOT PASS">
+						<input type="button" value="SIGN UP" class="paper-btn btn-block"
+								onclick="location.href='joinForm.jsp'">
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- 푸터파일 -->
+		<jsp:include page="../include/bottom.jsp" />
+		<!-- 푸터파일 -->
 	</div>
-	<!-- 푸터파일 -->
-	<jsp:include page="../include/bottom.jsp"/>
-	<!-- 푸터파일 -->
-</div>
+</body>
 </body>
 </html>
